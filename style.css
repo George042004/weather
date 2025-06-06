@@ -4,6 +4,66 @@ input::placeholder
 }
 
 
+  #maindiv
+        {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: auto;
+        }
+        #div1
+        {
+            background-color: darkblue;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            animation: ani1 1.5s infinite ease-in-out;
+        }
+        #div2
+        {
+            background-color: darkblue;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            animation: ani2 1.5s infinite ease-in-out;
+
+        } 
+        #div3
+        {
+            background-color: darkblue;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            animation: ani3 1.5s infinite ease-in-out;
+        }
+           @keyframes anim
+        {
+            0%{transform: rotate(0deg);}
+
+            100%{transform: rotate(360deg);}
+        }
+        @keyframes ani1
+        {
+            0%{opacity: 0;}
+            50%{opacity: 0.5;}
+            100%{opacity: 1;}
+        }
+
+        @keyframes ani2
+        {
+            
+            20%{opacity: 0;}
+            70%{opacity: 0.5;}
+        }
+        @keyframes ani3
+        {
+            
+            40%{opacity: 0;}
+            80%{opacity: 0.5;}
+            0%{opacity: 1;}
+        }
+
 /* for laptop */
 @media (min-width: 769px) and (max-width: 14480px)
 {
